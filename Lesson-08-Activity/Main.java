@@ -8,8 +8,8 @@ class Main {
 
   }
 
-  String print(String text){
-	  return text;
+  void print(String text){
+	  System.out.println(text);
   }
 
   double FtoC(double F){
@@ -18,12 +18,12 @@ class Main {
   }
 
   double sphereVolume(double r){
-    double result = (4/3)*3.14*Math.pow(r,3);
+    double result = (4/3)*Math.PI*Math.pow(r,3);
     return result;	
   }
 
   double coneVolume(double r, double h){
-    double result = (1/3)*3.14*(r*r)*h;
+    double result = (1/3)*Math.PI*(r*r)*h;
     return result;	
   }
 
